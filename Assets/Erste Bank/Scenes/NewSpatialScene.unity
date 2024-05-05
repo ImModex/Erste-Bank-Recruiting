@@ -909,7 +909,7 @@ MonoBehaviour:
   description: Spielen Sie das Minigame durch.
   startAutomatically: 1
   saveUserProgress: 1
-  tasksAreOrdered: 1
+  tasksAreOrdered: 0
   celebrateOnComplete: 1
   questRewards: []
   tasks:
@@ -952,6 +952,41 @@ MonoBehaviour:
     name: Nehmen Sie an einem Meeting Teil
     type: 1
     progressSteps: 4
+    taskMarkers: []
+    onStartedEvent:
+      id: 0
+      unityEventIsSynced: 0
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+      animatorEvent:
+        events: []
+      questEvent:
+        events: []
+    onCompletedEvent:
+      id: 0
+      unityEventIsSynced: 0
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+      animatorEvent:
+        events: []
+      questEvent:
+        events: []
+    onPreviouslyCompleted:
+      id: 0
+      unityEventIsSynced: 0
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+      animatorEvent:
+        events: []
+      questEvent:
+        events: []
+  - id: 3
+    name: Sammeln Sie alle Tombstones ein!
+    type: 1
+    progressSteps: 3
     taskMarkers: []
     onStartedEvent:
       id: 0
@@ -1030,13 +1065,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256597947}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.98, y: 3.01, z: 7.97}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.635946, y: 2.0296276, z: -7.2432427}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1391113579}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &280015637
 GameObject:
@@ -1563,6 +1598,107 @@ Transform:
   m_Father: {fileID: 1128472938}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &422513751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 422513752}
+  - component: {fileID: 422513754}
+  - component: {fileID: 422513753}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &422513752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422513751}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.741, y: 11.375, z: -15.414}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1983900093}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &422513753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422513751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24533cd6da2394ed2bea6783b0af62c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  listenFor: 0
+  onEnterEvent:
+    id: 0
+    unityEventIsSynced: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1983900092}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    animatorEvent:
+      events: []
+    questEvent:
+      events:
+      - questID: 1
+        questEventType: 3
+        taskID: 3
+  onExitEvent:
+    id: 0
+    unityEventIsSynced: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    animatorEvent:
+      events: []
+    questEvent:
+      events: []
+  deprecated_onEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  deprecated_onExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!135 &422513754
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422513751}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &466671492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,7 +1759,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &473139572
 PrefabInstance:
@@ -1997,8 +2133,125 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
+--- !u!1001 &529202619
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1983900093}
+    m_Modifications:
+    - target: {fileID: 360730731081722248, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_Name
+      value: Tombstone
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.5780003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.365
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.418
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6691306
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7431448
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 138000a6f6ef5ab4887269135e20d2d4, type: 3}
+--- !u!4 &529202620 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 529202619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &529202621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 360730731081722248, guid: 138000a6f6ef5ab4887269135e20d2d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 529202619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &529202622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529202621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!114 &529202623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529202621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: c7b7931c0d8e71e4e91a960fad306e77, type: 2}
 --- !u!1 &544627105
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,6 +2450,39 @@ MonoBehaviour:
       events: []
     questEvent:
       events: []
+--- !u!1 &644693366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 644693367}
+  m_Layer: 0
+  m_Name: Tombstone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &644693367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644693366}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.021, y: -0.009, z: 0.042}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1849844257}
+  - {fileID: 1692241102}
+  m_Father: {fileID: 1337330031}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &685450075
 GameObject:
   m_ObjectHideFlags: 0
@@ -2260,7 +2546,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &697994322 stripped
 Transform:
@@ -2302,7 +2588,7 @@ Transform:
   - {fileID: 2001458187}
   - {fileID: 22084831}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &750827807
 GameObject:
@@ -2338,7 +2624,7 @@ Transform:
   - {fileID: 1763325555}
   - {fileID: 1384207802}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 180.41, z: 0}
 --- !u!1 &755540622
 GameObject:
@@ -3683,7 +3969,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1231964610
 PrefabInstance:
@@ -3845,6 +4131,206 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1236029970}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1251342499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1251342500}
+  - component: {fileID: 1251342501}
+  m_Layer: 0
+  m_Name: Tombstone_Quest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1251342500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251342499}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.655947, y: -0.9803725, z: -15.213243}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1391113579}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1251342501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251342499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843f1df22955d4c8193e21ccb10c9077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 2
+  version: 2
+  questName: Collect all the Tombstones!
+  description: As a good employee, you must keep track of where your valuable achievements
+    are!
+  startAutomatically: 0
+  saveUserProgress: 1
+  tasksAreOrdered: 0
+  celebrateOnComplete: 1
+  questRewards: []
+  tasks:
+  - id: 1
+    name: Collect the Tombstone in the Meeting room
+    type: 0
+    progressSteps: 0
+    taskMarkers: []
+    onStartedEvent:
+      id: 0
+      unityEventIsSynced: 0
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+      animatorEvent:
+        events: []
+      questEvent:
+        events: []
+    onCompletedEvent:
+      id: 0
+      unityEventIsSynced: 0
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+      animatorEvent:
+        events: []
+      questEvent:
+        events: []
+    onPreviouslyCompleted:
+      id: 0
+      unityEventIsSynced: 0
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+      animatorEvent:
+        events: []
+      questEvent:
+        events: []
+  - id: 2
+    name: Collect the Tombstone in the Manager's Office
+    type: 0
+    progressSteps: 0
+    taskMarkers: []
+    onStartedEvent:
+      id: 0
+      unityEventIsSynced: 0
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+      animatorEvent:
+        events: []
+      questEvent:
+        events: []
+    onCompletedEvent:
+      id: 0
+      unityEventIsSynced: 0
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+      animatorEvent:
+        events: []
+      questEvent:
+        events: []
+    onPreviouslyCompleted:
+      id: 0
+      unityEventIsSynced: 0
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+      animatorEvent:
+        events: []
+      questEvent:
+        events: []
+  - id: 3
+    name: Collect the Tombstone in the Relax Area
+    type: 0
+    progressSteps: 0
+    taskMarkers: []
+    onStartedEvent:
+      id: 0
+      unityEventIsSynced: 0
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+      animatorEvent:
+        events: []
+      questEvent:
+        events: []
+    onCompletedEvent:
+      id: 0
+      unityEventIsSynced: 0
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+      animatorEvent:
+        events: []
+      questEvent:
+        events: []
+    onPreviouslyCompleted:
+      id: 0
+      unityEventIsSynced: 0
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+      animatorEvent:
+        events: []
+      questEvent:
+        events: []
+  onStartedEvent:
+    id: 0
+    unityEventIsSynced: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    animatorEvent:
+      events: []
+    questEvent:
+      events: []
+  onCompletedEvent:
+    id: 0
+    unityEventIsSynced: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    animatorEvent:
+      events: []
+    questEvent:
+      events: []
+  onPreviouslyCompleted:
+    id: 0
+    unityEventIsSynced: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    animatorEvent:
+      events: []
+    questEvent:
+      events: []
+  onResetEvent:
+    id: 0
+    unityEventIsSynced: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    animatorEvent:
+      events: []
+    questEvent:
+      events: []
 --- !u!1001 &1317755474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3986,8 +4472,9 @@ Transform:
   - {fileID: 1881700423}
   - {fileID: 7810652}
   - {fileID: 1907243147}
+  - {fileID: 644693367}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1337330032
 BoxCollider:
@@ -4077,6 +4564,95 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1353636923}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1375079148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1375079149}
+  - component: {fileID: 1375079151}
+  - component: {fileID: 1375079150}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1375079149
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375079148}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.741, y: 11.375, z: -15.414}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1375079150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375079148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24533cd6da2394ed2bea6783b0af62c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  listenFor: 0
+  onEnterEvent:
+    id: 0
+    unityEventIsSynced: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    animatorEvent:
+      events: []
+    questEvent:
+      events:
+      - questID: 1
+        questEventType: 3
+        taskID: 3
+  onExitEvent:
+    id: 0
+    unityEventIsSynced: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    animatorEvent:
+      events: []
+    questEvent:
+      events: []
+  deprecated_onEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  deprecated_onExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!135 &1375079151
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375079148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1384207801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4249,6 +4825,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386429526}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1391113578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1391113579}
+  m_Layer: 0
+  m_Name: Quests
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1391113579
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391113578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.655947, y: 0.9803725, z: 15.213243}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 256597949}
+  - {fileID: 1251342500}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1427564313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4605,7 +5214,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1467057938
 PrefabInstance:
@@ -4767,6 +5376,123 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1478066701}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1528343013
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1718694344}
+    m_Modifications:
+    - target: {fileID: 360730731081722248, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_Name
+      value: Tombstone
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.5780003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.365
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.418
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6691306
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7431448
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 138000a6f6ef5ab4887269135e20d2d4, type: 3}
+--- !u!4 &1528343014 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1528343013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1528343015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 360730731081722248, guid: 138000a6f6ef5ab4887269135e20d2d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1528343013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1528343016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528343015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!114 &1528343017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528343015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: c7b7931c0d8e71e4e91a960fad306e77, type: 2}
 --- !u!4 &1632652452 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 29169c61ce8d59c4aa5396f8d0d02c47,
@@ -4842,6 +5568,123 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29169c61ce8d59c4aa5396f8d0d02c47, type: 3}
+--- !u!1001 &1692241101
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 644693367}
+    m_Modifications:
+    - target: {fileID: 360730731081722248, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_Name
+      value: Tombstone
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.5780003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.365
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.418
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6691306
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7431448
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 138000a6f6ef5ab4887269135e20d2d4, type: 3}
+--- !u!4 &1692241102 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1029708156441277234, guid: 138000a6f6ef5ab4887269135e20d2d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1692241101}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1692241103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 360730731081722248, guid: 138000a6f6ef5ab4887269135e20d2d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1692241101}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1692241104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692241103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!114 &1692241105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692241103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: c7b7931c0d8e71e4e91a960fad306e77, type: 2}
 --- !u!1 &1712167272
 GameObject:
   m_ObjectHideFlags: 0
@@ -4878,7 +5721,40 @@ Transform:
   - {fileID: 1128472938}
   - {fileID: 1004349612}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1718694343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1718694344}
+  m_Layer: 0
+  m_Name: Tombstone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1718694344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718694343}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -15.5, y: -0.099, z: -25.308}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2025388213}
+  - {fileID: 1528343014}
+  m_Father: {fileID: 1874527457}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1754501527
 PrefabInstance:
@@ -5226,7 +6102,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1001 &1829237359
 PrefabInstance:
@@ -5303,6 +6179,107 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1829237359}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1849844256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1849844257}
+  - component: {fileID: 1849844259}
+  - component: {fileID: 1849844258}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1849844257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849844256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.741, y: 11.375, z: -15.414}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 644693367}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1849844258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849844256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24533cd6da2394ed2bea6783b0af62c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  listenFor: 0
+  onEnterEvent:
+    id: 0
+    unityEventIsSynced: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 644693366}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    animatorEvent:
+      events: []
+    questEvent:
+      events:
+      - questID: 1
+        questEventType: 3
+        taskID: 3
+  onExitEvent:
+    id: 0
+    unityEventIsSynced: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    animatorEvent:
+      events: []
+    questEvent:
+      events: []
+  deprecated_onEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  deprecated_onExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!135 &1849844259
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849844256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1874527455
 GameObject:
   m_ObjectHideFlags: 0
@@ -5331,8 +6308,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.4928093, y: 2.9685059, z: 5.5202637}
-  m_Center: {x: -6.0643187, y: 11.229101, z: -12.009068}
+  m_Size: {x: 4.173232, y: 2.1991959, z: 4.2331924}
+  m_Center: {x: -5.4991355, y: 10.844446, z: -12.652603}
 --- !u!4 &1874527457
 Transform:
   m_ObjectHideFlags: 0
@@ -5357,8 +6334,9 @@ Transform:
   - {fileID: 755540624}
   - {fileID: 1099793090}
   - {fileID: 594993719}
+  - {fileID: 1718694344}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1875030546
 GameObject:
@@ -5470,7 +6448,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1881700423 stripped
 Transform:
@@ -5612,7 +6590,7 @@ Transform:
   - {fileID: 473139573}
   - {fileID: 544627106}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1921293510
 PrefabInstance:
@@ -5884,6 +6862,39 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7322109645423974610, guid: 55a3f9b7393613347896ce38bdb46315, type: 3}
+--- !u!1 &1983900092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1983900093}
+  m_Layer: 0
+  m_Name: Tombstone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1983900093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983900092}
+  m_LocalRotation: {x: -0, y: -0.94238335, z: -0, w: 0.33453506}
+  m_LocalPosition: {x: -21.439, y: -8.294, z: -8.824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 422513752}
+  - {fileID: 529202620}
+  m_Father: {fileID: 2070357900}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2001458186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6109,6 +7120,107 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2010287795}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2025388212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2025388213}
+  - component: {fileID: 2025388215}
+  - component: {fileID: 2025388214}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2025388213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025388212}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.741, y: 11.375, z: -15.414}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1718694344}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2025388214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025388212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24533cd6da2394ed2bea6783b0af62c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  listenFor: 0
+  onEnterEvent:
+    id: 0
+    unityEventIsSynced: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1718694343}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    animatorEvent:
+      events: []
+    questEvent:
+      events:
+      - questID: 1
+        questEventType: 3
+        taskID: 3
+  onExitEvent:
+    id: 0
+    unityEventIsSynced: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    animatorEvent:
+      events: []
+    questEvent:
+      events: []
+  deprecated_onEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  deprecated_onExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!135 &2025388215
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025388212}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2070357899
 GameObject:
   m_ObjectHideFlags: 0
@@ -6142,8 +7254,9 @@ Transform:
   - {fileID: 1754501528}
   - {fileID: 2010287796}
   - {fileID: 1829237360}
+  - {fileID: 1983900093}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 140.911, z: 0}
 --- !u!1 &2074522126
 GameObject:
