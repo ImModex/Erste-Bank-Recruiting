@@ -5422,7 +5422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1c437d99c9a4616adbe21f3ffa0e18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: 'Interact Text: Hyperlink Demonstration Leading to ErsteBank Webpage'
+  interactText: Hyperlink Demonstration Leading to ErsteBank Webpage
   iconType: 0
   icon: {fileID: 0}
   interactiveRadius: 5
