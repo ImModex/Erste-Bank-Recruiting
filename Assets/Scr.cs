@@ -17,6 +17,8 @@ public class Scr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!timerBar) return;
+        
         if (timeLeft > 0)
         {
             timeLeft -= Time.deltaTime;
