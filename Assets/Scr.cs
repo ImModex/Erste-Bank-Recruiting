@@ -1,32 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Scr : MonoBehaviour
 {
     public float maxTime = 5f;
     public float timeLeft;
 
-    private RectTransform rectComponent;
-    private Image imageComp;
-    public float speed = 0.0f;
+    private SpriteRenderer spriteRenderer; // Verwende SpriteRenderer
+    public float speed = 1.0f; // Ändere die Geschwindigkeit, wenn nötig
+
     void Start()
     {
-        rectComponent = GetComponent<RectTransform>();
-        imageComp = rectComponent.GetComponent<Image>();
-        imageComp.fillAmount = maxTime;
+        spriteRenderer = GetComponent<SpriteRenderer>(); // Ändere zu SpriteRenderer
+
+        if (spriteRenderer != null)
+        {
+            timeLeft = maxTime;
+        }
+        else
+        {
+            Debug.LogError("SpriteRenderer component not found!");
+        }
     }
 
-    // Update is called once per frame
+    // Update wird einmal pro Frame aufgerufen
     void Update()
     {
-        if (!imageComp) return;
+        if (spriteRenderer == null) return;
 
-        if (imageComp.fillAmount != 0f)
+        if (timeLeft > 0f)
         {
-            imageComp.fillAmount = imageComp.fillAmount - Time.deltaTime * speed;
-
+            timeLeft -= Time.deltaTime * speed;
+            float scaleX = Mathf.Clamp(timeLeft / maxTime, 0, 1);
+            transform.localScale = new Vector3(scaleX, transform.localScale.y, transform.localScale.z);
         }
         else
         {
