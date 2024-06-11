@@ -7,12 +7,14 @@ public class Scr : MonoBehaviour
     public float maxTime = 5f;
     public float timeLeft;
 
+    private RectTransform rectComponent;
     private SpriteRenderer spriteRenderer; // Verwende SpriteRenderer
     public float speed = 1.0f; // Ändere die Geschwindigkeit, wenn nötig
 
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>(); // Ändere zu SpriteRenderer
+        rectComponent = GetComponent<RectTransform>();
+        spriteRenderer = rectComponent.GetComponent<SpriteRenderer>(); // Ändere zu SpriteRenderer
 
         if (spriteRenderer != null)
         {
