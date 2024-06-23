@@ -456,7 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 81068255}
   m_Layer: 0
-  m_Name: Task4 (FinalTerms)
+  m_Name: Quest4 (FinalTerms)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5119,7 +5119,7 @@ GameObject:
   - component: {fileID: 1375622344}
   - component: {fileID: 1375622346}
   m_Layer: 0
-  m_Name: Task3 (ComfortLetter)
+  m_Name: Quest3 (ComfortLetter)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6422,7 +6422,7 @@ GameObject:
   - component: {fileID: 1530487923}
   - component: {fileID: 1530487924}
   m_Layer: 0
-  m_Name: Task1 (Email)
+  m_Name: Quest1 (Email)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6609,7 +6609,7 @@ GameObject:
   - component: {fileID: 1566448470}
   - component: {fileID: 1566448471}
   m_Layer: 0
-  m_Name: Task2 (Meeting)
+  m_Name: Quest2 (Meeting)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6927,7 +6927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1625685896}
   m_Layer: 0
-  m_Name: Task5 (RoadShow)
+  m_Name: Quest5 (RoadShow)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8739,7 +8739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2034528203}
   m_Layer: 0
-  m_Name: Tasks
+  m_Name: Quests
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
