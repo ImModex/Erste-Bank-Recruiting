@@ -8,23 +8,33 @@ namespace SpatialSys.Samples.InputOverride
     public class GameManagerScript : MonoBehaviour
     {
 
-        public GameObject timeBar;
+        public GameObject timeBarEmail;
+        public GameObject timeBarMeeting;
         // Start is called before the first frame update
         void Start()
         {
             
         }
 
-        public void startTimer()
+        public void startReadEmailTimer()
         {
-           timeBar.SetActive(true);
+           timeBarEmail.SetActive(true);
         }
 
-        public void stopTimer()
+        public void stopEmailTimer()
         {
-            timeBar.SetActive(false);
+            timeBarEmail.SetActive(false);
         }
 
+        public void startMeetingTimer()
+        {
+            timeBarMeeting.SetActive(true);
+        }
+
+        public void stopMeetingTimer()
+        {
+            timeBarMeeting.SetActive(false);
+        }
         // Update is called once per frame
         void Update()
         {

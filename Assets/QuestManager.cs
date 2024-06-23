@@ -14,7 +14,7 @@ namespace SpatialSys.Samples.InputOverride
         void Start()
         {
             instance = this;
-            StartQuest(_quests[0]);
+            //StartQuest(_quests[0]);
         }
 
         public List<ErsteBankQuest> _quests;
