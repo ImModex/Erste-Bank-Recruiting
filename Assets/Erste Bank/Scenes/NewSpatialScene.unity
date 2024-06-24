@@ -805,7 +805,8 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
-    objectsToEnable: []
+    objectsToEnable:
+    - {fileID: 81198481}
     objectsToDisable:
     - {fileID: 2060869851}
     - {fileID: 1824806889}
