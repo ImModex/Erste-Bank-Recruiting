@@ -45,15 +45,8 @@ namespace SpatialSys.Samples.InputOverride
         
         public void RemoveLoadingBar(ErsteBankTask task)
         {
-            loadingBars.TryGetValue(task, out var bar);
-            loadingBars.Remove(task);
-            
+            loadingBars.Remove(task, out var bar);
             Destroy(bar);
-        }
-
-        private void Update()
-        {
-            
         }
     }
 }

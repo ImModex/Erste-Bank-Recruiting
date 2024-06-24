@@ -7,6 +7,9 @@ using UnityEngine;
 
 namespace SpatialSys.Samples.InputOverride
 {
+    // Deprecated
+    
+    /*
     public class QuestManager : MonoBehaviour
     {
         public static QuestManager instance;
@@ -74,4 +77,5 @@ namespace SpatialSys.Samples.InputOverride
             }
         }
     }
+    */
 }

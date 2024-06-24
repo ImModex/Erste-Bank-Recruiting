@@ -12500,6 +12500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingBarManager: {fileID: 1645131735}
+  tasks: []
 --- !u!4 &1585650260
 Transform:
   m_ObjectHideFlags: 0

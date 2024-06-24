@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using SpatialSys.UnitySDK;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -29,9 +31,9 @@ namespace SpatialSys.Samples.InputOverride
         private void Start()
         {
             gameManager = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+            gameManager.tasks.Add(this);
             
             if(startOnLoad) StartTask();
-            // Test
         }
 
         public void StartTask()
@@ -45,8 +47,7 @@ namespace SpatialSys.Samples.InputOverride
         public void FailTask()
         {
             gameManager.loadingBarManager.RemoveLoadingBar(this);
-            
-            Debug.LogWarning($"ERSTE {title} FAILED XDDDDDDDDDDDDDDDDDDDDDDDD");
+            gameManager.ResetTasks();
             
             onFailedEvents.Invoke();
         }
@@ -57,6 +58,14 @@ namespace SpatialSys.Samples.InputOverride
             
             onCompleteEvents.Invoke();
             completed = true;
+        }
+
+        public void ResetTask()
+        {
+            gameManager.loadingBarManager.RemoveLoadingBar(this);
+            completed = false;
+            
+            if(startOnLoad) StartTask();
         }
     }
 }
