@@ -348,7 +348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &20586733
 Transform:
   m_ObjectHideFlags: 0
@@ -376,8 +376,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679647456a363450ab8d072b2a91f5a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Point of interest
-  description: 
+  title: Roadshow POI 1
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
   titleFontOverride:
     overrideFont: 0
     font: {fileID: 0}
@@ -581,7 +584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43173968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 20.1, y: 0, z: 0.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -828,7 +831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Finale Terms Title 4
   description: Finale Terms Description 4
-  timeToComplete: 0
+  timeToComplete: 30
   startOnLoad: 0
   completed: 0
   onStartEvents:
@@ -854,11 +857,10 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
-    objectsToEnable:
-    - {fileID: 20599355}
+    objectsToEnable: []
     objectsToDisable:
-    - {fileID: 81198481}
     - {fileID: 1373054381}
+    - {fileID: 81198481}
     tasksToStart: []
     endAllTasks: 0
     resetTask: 0
@@ -1827,12 +1829,12 @@ GameObject:
   - component: {fileID: 187761497}
   - component: {fileID: 187761498}
   m_Layer: 0
-  m_Name: Placeholder 1 POI
+  m_Name: Placeholder 2 POI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &187761497
 Transform:
   m_ObjectHideFlags: 0
@@ -1860,8 +1862,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679647456a363450ab8d072b2a91f5a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Point of interest
-  description: 
+  title: Roadshow POI 2
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
   titleFontOverride:
     overrideFont: 0
     font: {fileID: 0}
@@ -2192,7 +2197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &235109572
 Transform:
   m_ObjectHideFlags: 0
@@ -2220,7 +2225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1c437d99c9a4616adbe21f3ffa0e18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: Interact
+  interactText: ' Interact Roadshow 1'
   textFontOverride:
     overrideFont: 0
     font: {fileID: 0}
@@ -2234,7 +2239,20 @@ MonoBehaviour:
     unityEventIsSynced: 0
     unityEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1143450768}
+          m_TargetAssemblyTypeName: SpatialSys.Samples.InputOverride.ErsteBankTask,
+            ErsteBankInteractionCustomScripts
+          m_MethodName: CompleteTask
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     animatorEvent:
       events: []
     questEvent:
@@ -6401,12 +6419,12 @@ GameObject:
   - component: {fileID: 868005440}
   - component: {fileID: 868005441}
   m_Layer: 0
-  m_Name: Placeholder 1 Interactable
+  m_Name: Placeholder 3 Interactable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &868005440
 Transform:
   m_ObjectHideFlags: 0
@@ -6434,7 +6452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1c437d99c9a4616adbe21f3ffa0e18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: Interact
+  interactText: ' Interact Roadshow 3'
   textFontOverride:
     overrideFont: 0
     font: {fileID: 0}
@@ -6448,7 +6466,20 @@ MonoBehaviour:
     unityEventIsSynced: 0
     unityEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1143450770}
+          m_TargetAssemblyTypeName: SpatialSys.Samples.InputOverride.ErsteBankTask,
+            ErsteBankInteractionCustomScripts
+          m_MethodName: CompleteTask
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     animatorEvent:
       events: []
     questEvent:
@@ -6884,7 +6915,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1016029068}
   m_Layer: 0
-  m_Name: Placeholder 1 Task (1)
+  m_Name: 'Placeholder 2 Task '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6898,7 +6929,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016029067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.02, y: 0, z: -4.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7901,13 +7932,16 @@ GameObject:
   m_Component:
   - component: {fileID: 1143450767}
   - component: {fileID: 1143450768}
+  - component: {fileID: 1143450771}
+  - component: {fileID: 1143450770}
+  - component: {fileID: 1143450769}
   m_Layer: 0
   m_Name: Quest5 (RoadShow)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1143450767
 Transform:
   m_ObjectHideFlags: 0
@@ -7939,16 +7973,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: 
-  description: 
-  timeToComplete: 0
+  title: Roadshow 1 Title
+  description: In the Relax-Area is a Placeholder
+  timeToComplete: 30
   startOnLoad: 0
   completed: 0
   onStartEvents:
     events:
       m_PersistentCalls:
         m_Calls: []
-    objectsToEnable: []
+    objectsToEnable:
+    - {fileID: 235109571}
     objectsToDisable: []
     tasksToStart: []
     endAllTasks: 0
@@ -7966,9 +8001,157 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    objectsToEnable:
+    - {fileID: 20586732}
+    objectsToDisable:
+    - {fileID: 235109571}
+    tasksToStart:
+    - {fileID: 1143450771}
+    endAllTasks: 0
+    resetTask: 0
+--- !u!114 &1143450769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143450766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Roadshow 4 Title
+  description: In the Middle Relax-Area is a Placeholder
+  timeToComplete: 30
+  startOnLoad: 0
+  completed: 0
+  onStartEvents:
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    objectsToEnable:
+    - {fileID: 1286033521}
+    objectsToDisable:
+    - {fileID: 1173249249}
+    tasksToStart: []
+    endAllTasks: 0
+    resetTask: 0
+  onFailedEvents:
+    events:
+      m_PersistentCalls:
+        m_Calls: []
     objectsToEnable: []
     objectsToDisable: []
     tasksToStart: []
+    endAllTasks: 0
+    resetTask: 0
+  onCompleteEvents:
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    objectsToEnable: []
+    objectsToDisable:
+    - {fileID: 1286033521}
+    tasksToStart: []
+    endAllTasks: 0
+    resetTask: 0
+--- !u!114 &1143450770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143450766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Roadshow 3 Title
+  description: In the your workspace is a Placeholder
+  timeToComplete: 15
+  startOnLoad: 0
+  completed: 0
+  onStartEvents:
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    objectsToEnable:
+    - {fileID: 868005439}
+    objectsToDisable:
+    - {fileID: 187761496}
+    tasksToStart: []
+    endAllTasks: 0
+    resetTask: 0
+  onFailedEvents:
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    objectsToEnable: []
+    objectsToDisable: []
+    tasksToStart: []
+    endAllTasks: 0
+    resetTask: 0
+  onCompleteEvents:
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    objectsToEnable:
+    - {fileID: 1173249249}
+    objectsToDisable:
+    - {fileID: 868005439}
+    tasksToStart:
+    - {fileID: 1143450769}
+    endAllTasks: 0
+    resetTask: 0
+--- !u!114 &1143450771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143450766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Roadshow 2 Title
+  description: In the Manager Room is a Placeholder
+  timeToComplete: 30
+  startOnLoad: 0
+  completed: 0
+  onStartEvents:
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    objectsToEnable:
+    - {fileID: 1567247236}
+    objectsToDisable:
+    - {fileID: 20586732}
+    tasksToStart: []
+    endAllTasks: 0
+    resetTask: 0
+  onFailedEvents:
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    objectsToEnable: []
+    objectsToDisable: []
+    tasksToStart: []
+    endAllTasks: 0
+    resetTask: 0
+  onCompleteEvents:
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    objectsToEnable:
+    - {fileID: 187761496}
+    objectsToDisable:
+    - {fileID: 1567247236}
+    tasksToStart:
+    - {fileID: 1143450770}
     endAllTasks: 0
     resetTask: 0
 --- !u!1 &1156550469
@@ -8056,12 +8239,12 @@ GameObject:
   - component: {fileID: 1173249250}
   - component: {fileID: 1173249251}
   m_Layer: 0
-  m_Name: Placeholder 1 POI
+  m_Name: Placeholder 3 POI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1173249250
 Transform:
   m_ObjectHideFlags: 0
@@ -8089,8 +8272,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679647456a363450ab8d072b2a91f5a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Point of interest
-  description: 
+  title: Roadshow POI 3
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
   titleFontOverride:
     overrideFont: 0
     font: {fileID: 0}
@@ -8776,12 +8962,12 @@ GameObject:
   - component: {fileID: 1286033522}
   - component: {fileID: 1286033523}
   m_Layer: 0
-  m_Name: Placeholder 1 Interactable
+  m_Name: Placeholder 4 Interactable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1286033522
 Transform:
   m_ObjectHideFlags: 0
@@ -8809,7 +8995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1c437d99c9a4616adbe21f3ffa0e18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: Interact
+  interactText: ' Interact Roadshow 4'
   textFontOverride:
     overrideFont: 0
     font: {fileID: 0}
@@ -8823,7 +9009,20 @@ MonoBehaviour:
     unityEventIsSynced: 0
     unityEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1143450769}
+          m_TargetAssemblyTypeName: SpatialSys.Samples.InputOverride.ErsteBankTask,
+            ErsteBankInteractionCustomScripts
+          m_MethodName: CompleteTask
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     animatorEvent:
       events: []
     questEvent:
@@ -9722,8 +9921,7 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
-    objectsToEnable:
-    - {fileID: 369913378}
+    objectsToEnable: []
     objectsToDisable:
     - {fileID: 636306652}
     - {fileID: 1236904222}
@@ -10173,12 +10371,12 @@ GameObject:
   - component: {fileID: 1433191213}
   - component: {fileID: 1433191214}
   m_Layer: 0
-  m_Name: Placeholder 1 POI
+  m_Name: Placeholder 4 POI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1433191213
 Transform:
   m_ObjectHideFlags: 0
@@ -10206,8 +10404,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679647456a363450ab8d072b2a91f5a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Point of interest
-  description: 
+  title: Roadshow POI 4
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
   titleFontOverride:
     overrideFont: 0
     font: {fileID: 0}
@@ -11843,9 +12044,7 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
-    objectsToEnable:
-    - {fileID: 544627105}
-    - {fileID: 544627105}
+    objectsToEnable: []
     objectsToDisable:
     - {fileID: 1099793089}
     - {fileID: 2074522126}
@@ -11955,7 +12154,6 @@ GameObject:
   - component: {fileID: 1566448469}
   - component: {fileID: 1566448468}
   - component: {fileID: 1566448470}
-  - component: {fileID: 1566448471}
   m_Layer: 0
   m_Name: Quest2 (Meeting)
   m_TagString: Untagged
@@ -12168,56 +12366,12 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
-    objectsToEnable:
-    - {fileID: 594993718}
+    objectsToEnable: []
     objectsToDisable:
     - {fileID: 755540622}
     - {fileID: 827299774}
-    tasksToStart: []
-    endAllTasks: 0
-    resetTask: 0
---- !u!114 &1566448471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566448465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: 
-  description: 
-  timeToComplete: 0
-  startOnLoad: 0
-  completed: 0
-  onStartEvents:
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    objectsToEnable: []
-    objectsToDisable: []
-    tasksToStart: []
-    endAllTasks: 0
-    resetTask: 0
-  onFailedEvents:
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    objectsToEnable: []
-    objectsToDisable: []
-    tasksToStart: []
-    endAllTasks: 0
-    resetTask: 0
-  onCompleteEvents:
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    objectsToEnable: []
-    objectsToDisable: []
-    tasksToStart: []
+    tasksToStart:
+    - {fileID: 1143450768}
     endAllTasks: 0
     resetTask: 0
 --- !u!1 &1567247236
@@ -12231,12 +12385,12 @@ GameObject:
   - component: {fileID: 1567247237}
   - component: {fileID: 1567247238}
   m_Layer: 0
-  m_Name: Placeholder 1 Interactable
+  m_Name: Placeholder 2 Interactable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1567247237
 Transform:
   m_ObjectHideFlags: 0
@@ -12264,7 +12418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1c437d99c9a4616adbe21f3ffa0e18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: Interact
+  interactText: ' Interact Roadshow 2'
   textFontOverride:
     overrideFont: 0
     font: {fileID: 0}
@@ -12278,7 +12432,20 @@ MonoBehaviour:
     unityEventIsSynced: 0
     unityEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1143450771}
+          m_TargetAssemblyTypeName: SpatialSys.Samples.InputOverride.ErsteBankTask,
+            ErsteBankInteractionCustomScripts
+          m_MethodName: CompleteTask
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     animatorEvent:
       events: []
     questEvent:
@@ -14162,7 +14329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1830342189}
   m_Layer: 0
-  m_Name: Placeholder 1 Task (3)
+  m_Name: Placeholder 4 Task
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14176,7 +14343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830342188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 9.19, y: 0.32, z: 1.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15177,7 +15344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1990759124}
   m_Layer: 0
-  m_Name: Placeholder 1 Task (2)
+  m_Name: 'Placeholder 3 Task '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15191,7 +15358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990759123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.17, y: 0, z: -4.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
