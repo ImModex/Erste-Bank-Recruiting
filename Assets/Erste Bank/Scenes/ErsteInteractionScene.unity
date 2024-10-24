@@ -220,80 +220,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2565474}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &20586732
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 20586733}
-  - component: {fileID: 20586734}
-  m_Layer: 0
-  m_Name: Placeholder 1 POI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &20586733
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20586732}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 43173969}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &20586734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20586732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 679647456a363450ab8d072b2a91f5a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Roadshow POI 1
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  titleFontOverride:
-    overrideFont: 0
-    font: {fileID: 0}
-    material: {fileID: 0}
-  descriptionFontOverride:
-    overrideFont: 0
-    font: {fileID: 0}
-    material: {fileID: 0}
-  backgroundColor: {r: 0, g: 0, b: 0, a: 0.4}
-  foregroundColor: {r: 1, g: 1, b: 1, a: 1}
-  sprite: {fileID: 0}
-  spriteSize: 0.75
-  spriteRectSize: {x: 0, y: 0}
-  textDisplayRadius: 3
-  markerDisplayRadius: 6
-  onTextDisplayedEvent:
-    id: 0
-    unityEventIsSynced: 0
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-    animatorEvent:
-      events: []
-    questEvent:
-      events: []
 --- !u!1001 &22084830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -374,88 +300,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 22084830}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &43173968
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 43173969}
-  - component: {fileID: 43173970}
-  m_Layer: 0
-  m_Name: Placeholder 1 Task
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &43173969
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43173968}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.1, y: 0, z: 0.64}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 20586733}
-  - {fileID: 235109572}
-  m_Father: {fileID: 1143450767}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &43173970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43173968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Roadshow 1 Title
-  description: In the Relax-Area is a Placeholder
-  timeToComplete: 30
-  startOnLoad: 0
-  completed: 0
-  onStartEvents:
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    objectsToEnable:
-    - {fileID: 235109571}
-    objectsToDisable: []
-    tasksToStart: []
-    endAllTasks: 0
-    resetTask: 0
-  onFailedEvents:
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    objectsToEnable: []
-    objectsToDisable: []
-    tasksToStart: []
-    endAllTasks: 0
-    resetTask: 0
-  onCompleteEvents:
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    objectsToEnable:
-    - {fileID: 20586732}
-    objectsToDisable:
-    - {fileID: 235109571}
-    tasksToStart:
-    - {fileID: 1016029069}
-    endAllTasks: 0
-    resetTask: 0
 --- !u!1 &80323424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,80 +1158,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 182422963}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &187761496
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 187761497}
-  - component: {fileID: 187761498}
-  m_Layer: 0
-  m_Name: Placeholder 2 POI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &187761497
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187761496}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1016029068}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &187761498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187761496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 679647456a363450ab8d072b2a91f5a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Roadshow POI 2
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  titleFontOverride:
-    overrideFont: 0
-    font: {fileID: 0}
-    material: {fileID: 0}
-  descriptionFontOverride:
-    overrideFont: 0
-    font: {fileID: 0}
-    material: {fileID: 0}
-  backgroundColor: {r: 0, g: 0, b: 0, a: 0.4}
-  foregroundColor: {r: 1, g: 1, b: 1, a: 1}
-  sprite: {fileID: 0}
-  spriteSize: 0.75
-  spriteRectSize: {x: 0, y: 0}
-  textDisplayRadius: 3
-  markerDisplayRadius: 6
-  onTextDisplayedEvent:
-    id: 0
-    unityEventIsSynced: 0
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-    animatorEvent:
-      events: []
-    questEvent:
-      events: []
 --- !u!1 &208449829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,102 +1414,134 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 232937345}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &235109571
-GameObject:
+--- !u!1001 &253013923
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 235109572}
-  - component: {fileID: 235109573}
-  m_Layer: 0
-  m_Name: Placeholder 1 Interactable
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &235109572
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1143450767}
+    m_Modifications:
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 1 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.tasksToStart.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
+      value: 
+      objectReference: {fileID: 414553453}
+    - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Placeholder 1 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478196, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 1 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep POI Placeholder 1 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: interactText
+      value: Queststep Interactable Placeholder 1 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Interactable Placeholder 1 Quest 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
+--- !u!4 &253013924 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 253013923}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 235109571}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 43173969}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &235109573
+--- !u!1 &253013925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 253013923}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &253013926 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 253013923}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 235109571}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a1c437d99c9a4616adbe21f3ffa0e18, type: 3}
+  m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: ' Interact Roadshow 1'
-  textFontOverride:
-    overrideFont: 0
-    font: {fileID: 0}
-    material: {fileID: 0}
-  iconType: 0
-  icon: {fileID: 0}
-  interactiveRadius: 5
-  visibilityRadius: 10
-  onInteractEvent:
-    id: 0
-    unityEventIsSynced: 0
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 43173970}
-          m_TargetAssemblyTypeName: SpatialSys.Samples.InputOverride.ErsteBankTask,
-            ErsteBankInteractionCustomScripts
-          m_MethodName: CompleteTask
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    animatorEvent:
-      events: []
-    questEvent:
-      events: []
-  onEnterEvent:
-    id: 0
-    unityEventIsSynced: 0
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-    animatorEvent:
-      events: []
-    questEvent:
-      events: []
-  onExitEvent:
-    id: 0
-    unityEventIsSynced: 0
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-    animatorEvent:
-      events: []
-    questEvent:
-      events: []
 --- !u!1001 &277109495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2639,6 +2441,144 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 411326410}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &414553450
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1143450767}
+    m_Modifications:
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep  Placeholder 2 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.tasksToStart.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
+      value: 
+      objectReference: {fileID: 612268637}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToDisable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
+      value: 
+      objectReference: {fileID: 253013925}
+    - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Placeholder 2 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478196, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep  Placeholder 2 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep POI  Placeholder 2 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: interactText
+      value: Queststep Interactable  Placeholder 2 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Interactable  Placeholder 2 Quest 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
+--- !u!4 &414553451 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 414553450}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &414553452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 414553450}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &414553453 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 414553450}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &422513751
 GameObject:
   m_ObjectHideFlags: 0
@@ -2746,6 +2686,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 3 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2823,6 +2768,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478196, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 3 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep POI Placeholder 3 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: interactText
+      value: Queststep Interactable Placeholder 3 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Interactable Placeholder 3 Quest 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
@@ -4011,6 +3976,139 @@ Transform:
   m_Father: {fileID: 80323425}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &612268634
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1143450767}
+    m_Modifications:
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 3 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.tasksToStart.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
+      value: 
+      objectReference: {fileID: 1148559624}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToDisable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
+      value: 
+      objectReference: {fileID: 414553452}
+    - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Placeholder 3 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep POI Placeholder 3 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: interactText
+      value: Queststep Interactable Placeholder 3 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Interactable Placeholder 3 Quest 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
+--- !u!4 &612268635 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 612268634}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &612268636 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 612268634}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &612268637 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 612268634}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &620643367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4018,6 +4116,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 81068255}
     m_Modifications:
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 1 Quest 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.size
@@ -4087,6 +4190,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478196, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 1 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep POI Placeholder 1 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: interactText
+      value: Queststep Interactable Placeholder 1 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Interactable Placeholder 1 Quest 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
@@ -5344,6 +5467,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 4 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.objectsToEnable.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -5422,6 +5550,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478196, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 4 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep POI Placeholder 4 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: interactText
+      value: Queststep Interactable Placeholder 4 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Interactable Placeholder 4 Quest 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
 --- !u!4 &851176775 stripped
@@ -5457,9 +5605,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 3 Quest 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.tasksToStart.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.objectsToEnable.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
+      value: 
+      objectReference: {fileID: 253013926}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
@@ -5530,6 +5693,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478196, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 3 Quest 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep POI Placeholder 3 Quest 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: interactText
+      value: Queststep Interactable Placeholder 3 Quest 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Interactable Placeholder 3 Quest 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
 --- !u!4 &851399131 stripped
@@ -5550,102 +5733,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &868005439
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 868005440}
-  - component: {fileID: 868005441}
-  m_Layer: 0
-  m_Name: Placeholder 3 Interactable
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &868005440
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868005439}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1990759124}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &868005441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868005439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a1c437d99c9a4616adbe21f3ffa0e18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactText: ' Interact Roadshow 3'
-  textFontOverride:
-    overrideFont: 0
-    font: {fileID: 0}
-    material: {fileID: 0}
-  iconType: 0
-  icon: {fileID: 0}
-  interactiveRadius: 5
-  visibilityRadius: 10
-  onInteractEvent:
-    id: 0
-    unityEventIsSynced: 0
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1990759125}
-          m_TargetAssemblyTypeName: SpatialSys.Samples.InputOverride.ErsteBankTask,
-            ErsteBankInteractionCustomScripts
-          m_MethodName: CompleteTask
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    animatorEvent:
-      events: []
-    questEvent:
-      events: []
-  onEnterEvent:
-    id: 0
-    unityEventIsSynced: 0
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-    animatorEvent:
-      events: []
-    questEvent:
-      events: []
-  onExitEvent:
-    id: 0
-    unityEventIsSynced: 0
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-    animatorEvent:
-      events: []
-    questEvent:
-      events: []
 --- !u!1 &963819326
 GameObject:
   m_ObjectHideFlags: 0
@@ -5918,89 +6005,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1004349611}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1016029067
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1016029068}
-  - component: {fileID: 1016029069}
-  m_Layer: 0
-  m_Name: 'Placeholder 2 Task '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1016029068
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1016029067}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.02, y: 0, z: -4.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 187761497}
-  - {fileID: 1567247237}
-  m_Father: {fileID: 1143450767}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1016029069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1016029067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Roadshow 2 Title
-  description: In the Manager Room is a Placeholder
-  timeToComplete: 30
-  startOnLoad: 0
-  completed: 0
-  onStartEvents:
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    objectsToEnable:
-    - {fileID: 1567247236}
-    objectsToDisable:
-    - {fileID: 20586732}
-    tasksToStart: []
-    endAllTasks: 0
-    resetTask: 0
-  onFailedEvents:
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    objectsToEnable: []
-    objectsToDisable: []
-    tasksToStart: []
-    endAllTasks: 0
-    resetTask: 0
-  onCompleteEvents:
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    objectsToEnable:
-    - {fileID: 187761496}
-    objectsToDisable:
-    - {fileID: 1567247236}
-    tasksToStart:
-    - {fileID: 1990759125}
-    endAllTasks: 0
-    resetTask: 0
 --- !u!1001 &1025491150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6461,7 +6465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1083598580 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+  m_CorrespondingSourceObject: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
     type: 3}
   m_PrefabInstance: {fileID: 1083598578}
   m_PrefabAsset: {fileID: 0}
@@ -6770,87 +6774,140 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 43173969}
-  - {fileID: 1016029068}
-  - {fileID: 1990759124}
-  - {fileID: 1830342189}
+  - {fileID: 253013924}
+  - {fileID: 414553451}
+  - {fileID: 612268635}
+  - {fileID: 1148559623}
   m_Father: {fileID: 2034528203}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1173249249
-GameObject:
+--- !u!1001 &1148559622
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1173249250}
-  - component: {fileID: 1173249251}
-  m_Layer: 0
-  m_Name: Placeholder 3 POI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1173249250
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1143450767}
+    m_Modifications:
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 4 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToEnable.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToDisable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
+      value: 
+      objectReference: {fileID: 612268636}
+    - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Placeholder 4 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478196, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 4 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep POI Placeholder 4 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: interactText
+      value: Queststep Interactable Placeholder 4 Quest 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Interactable Placeholder 4 Quest 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
+--- !u!4 &1148559623 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 1148559622}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1173249249}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1990759124}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1173249251
+--- !u!114 &1148559624 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 1148559622}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1173249249}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 679647456a363450ab8d072b2a91f5a2, type: 3}
+  m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Roadshow POI 3
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  titleFontOverride:
-    overrideFont: 0
-    font: {fileID: 0}
-    material: {fileID: 0}
-  descriptionFontOverride:
-    overrideFont: 0
-    font: {fileID: 0}
-    material: {fileID: 0}
-  backgroundColor: {r: 0, g: 0, b: 0, a: 0.4}
-  foregroundColor: {r: 1, g: 1, b: 1, a: 1}
-  sprite: {fileID: 0}
-  spriteSize: 0.75
-  spriteRectSize: {x: 0, y: 0}
-  textDisplayRadius: 3
-  markerDisplayRadius: 6
-  onTextDisplayedEvent:
-    id: 0
-    unityEventIsSynced: 0
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-    animatorEvent:
-      events: []
-    questEvent:
-      events: []
 --- !u!1 &1179529195
 GameObject:
   m_ObjectHideFlags: 0
@@ -9554,6 +9611,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 2 Quest 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -9590,7 +9652,7 @@ PrefabInstance:
     - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.79
+      value: 15.32
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -9600,7 +9662,7 @@ PrefabInstance:
     - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.26
+      value: -7.24
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -9636,6 +9698,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478196, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 2 Quest 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep POI Placeholder 2 Quest 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: interactText
+      value: Queststep Interactable Placeholder 2 Quest 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Interactable Placeholder 2 Quest 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
@@ -10080,102 +10162,6 @@ Transform:
   m_Father: {fileID: 2034528203}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1567247236
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1567247237}
-  - component: {fileID: 1567247238}
-  m_Layer: 0
-  m_Name: Placeholder 2 Interactable
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1567247237
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1567247236}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1016029068}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1567247238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1567247236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a1c437d99c9a4616adbe21f3ffa0e18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactText: ' Interact Roadshow 2'
-  textFontOverride:
-    overrideFont: 0
-    font: {fileID: 0}
-    material: {fileID: 0}
-  iconType: 0
-  icon: {fileID: 0}
-  interactiveRadius: 5
-  visibilityRadius: 10
-  onInteractEvent:
-    id: 0
-    unityEventIsSynced: 0
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1016029069}
-          m_TargetAssemblyTypeName: SpatialSys.Samples.InputOverride.ErsteBankTask,
-            ErsteBankInteractionCustomScripts
-          m_MethodName: CompleteTask
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    animatorEvent:
-      events: []
-    questEvent:
-      events: []
-  onEnterEvent:
-    id: 0
-    unityEventIsSynced: 0
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-    animatorEvent:
-      events: []
-    questEvent:
-      events: []
-  onExitEvent:
-    id: 0
-    unityEventIsSynced: 0
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-    animatorEvent:
-      events: []
-    questEvent:
-      events: []
 --- !u!1 &1585650258
 GameObject:
   m_ObjectHideFlags: 0
@@ -10845,6 +10831,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 1 Quest 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -10912,6 +10903,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478196, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 1 Quest 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep POI Placeholder 1 Quest 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: interactText
+      value: Queststep Interactable Placeholder 1 Quest 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Interactable Placeholder 1 Quest 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
@@ -11336,6 +11347,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 2 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -11413,6 +11429,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478196, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: title
+      value: Queststep Placeholder 2 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep POI Placeholder 2 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: interactText
+      value: Queststep Interactable Placeholder 2 Quest 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_Name
+      value: Queststep Interactable Placeholder 2 Quest 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
@@ -11639,9 +11675,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onCompleteEvents.tasksToStart.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.objectsToEnable.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
+      value: 
+      objectReference: {fileID: 253013926}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
@@ -12153,24 +12199,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1829237359}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1830342189 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
-    type: 3}
-  m_PrefabInstance: {fileID: 4452435431944862874}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1830342190 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
-    type: 3}
-  m_PrefabInstance: {fileID: 4452435431944862874}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1849844256
 GameObject:
   m_ObjectHideFlags: 0
@@ -13064,89 +13092,6 @@ Transform:
   m_Father: {fileID: 2070357900}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1990759123
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1990759124}
-  - component: {fileID: 1990759125}
-  m_Layer: 0
-  m_Name: 'Placeholder 3 Task '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1990759124
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990759123}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.17, y: 0, z: -4.85}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1173249250}
-  - {fileID: 868005440}
-  m_Father: {fileID: 1143450767}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1990759125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990759123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Roadshow 3 Title
-  description: In the your workspace is a Placeholder
-  timeToComplete: 15
-  startOnLoad: 0
-  completed: 0
-  onStartEvents:
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    objectsToEnable:
-    - {fileID: 868005439}
-    objectsToDisable:
-    - {fileID: 187761496}
-    tasksToStart: []
-    endAllTasks: 0
-    resetTask: 0
-  onFailedEvents:
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    objectsToEnable: []
-    objectsToDisable: []
-    tasksToStart: []
-    endAllTasks: 0
-    resetTask: 0
-  onCompleteEvents:
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    objectsToEnable:
-    - {fileID: 1173249249}
-    objectsToDisable:
-    - {fileID: 868005439}
-    tasksToStart:
-    - {fileID: 1830342190}
-    endAllTasks: 0
-    resetTask: 0
 --- !u!1 &1994993752
 GameObject:
   m_ObjectHideFlags: 0
@@ -14419,77 +14364,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29169c61ce8d59c4aa5396f8d0d02c47, type: 3}
---- !u!1001 &4452435431944862874
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1143450767}
-    m_Modifications:
-    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
-        type: 3}
-      propertyPath: onStartEvents.objectsToDisable.Array.data[0]
-      value: 
-      objectReference: {fileID: 1173249249}
-    - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
-        type: 3}
-      propertyPath: m_Name
-      value: Placeholder 4 Task
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452435430552859319, guid: 0c99775e116cbc44f93fdd4733f08154,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
