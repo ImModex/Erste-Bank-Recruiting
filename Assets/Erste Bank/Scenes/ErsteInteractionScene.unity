@@ -1480,9 +1480,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToEnable.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
       value: 
       objectReference: {fileID: 414553453}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[0]
+      value: 
+      objectReference: {fileID: 253013925}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 253013927}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToDisable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
+      value: 
+      objectReference: {fileID: 253013925}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_Name
@@ -1556,12 +1586,27 @@ PrefabInstance:
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.123
+      value: -18.418
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.062
+      value: 5.2839994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -1614,6 +1659,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &253013927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 253013923}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &272020482
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,9 +2615,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToEnable.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
       value: 
       objectReference: {fileID: 612268637}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 414553452}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
@@ -2576,7 +2642,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
       value: 
-      objectReference: {fileID: 253013925}
+      objectReference: {fileID: 414553452}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_Name
@@ -2650,11 +2716,26 @@ PrefabInstance:
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.85
+      value: 3.1600003
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.z
+      value: -11.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
@@ -2820,9 +2901,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToEnable.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
       value: 
       objectReference: {fileID: 851176777}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 427708424}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
@@ -2832,7 +2928,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
       value: 
-      objectReference: {fileID: 1753920994}
+      objectReference: {fileID: 427708424}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_Name
@@ -2906,12 +3002,17 @@ PrefabInstance:
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01999998
+      value: -9.959
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.43199998
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.059999943
+      value: -1.4639997
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -4342,9 +4443,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToEnable.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
       value: 
       objectReference: {fileID: 1148559624}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 612268636}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
@@ -4354,7 +4470,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
       value: 
-      objectReference: {fileID: 414553452}
+      objectReference: {fileID: 612268636}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_Name
@@ -4423,12 +4539,17 @@ PrefabInstance:
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1699996
+      value: -10.108999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.43199998
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.09000015
+      value: -1.494
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -4510,9 +4631,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToEnable.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
       value: 
       objectReference: {fileID: 1753920995}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 620643368}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToDisable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
+      value: 
+      objectReference: {fileID: 620643368}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.events.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.events.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.events.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_Name
@@ -4586,12 +4747,12 @@ PrefabInstance:
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.119999886
+      value: -0.8260002
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.40999985
+      value: 10.610001
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -5164,13 +5325,33 @@ PrefabInstance:
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.size
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToEnable.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
       value: 
       objectReference: {fileID: 1764417511}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.tasksToStart.Array.data[1]
+      value: 
+      objectReference: {fileID: 1689714201}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 718345357}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
@@ -5180,7 +5361,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
       value: 
-      objectReference: {fileID: 1995477726}
+      objectReference: {fileID: 718345357}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_Name
@@ -5260,12 +5441,17 @@ PrefabInstance:
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.010000229
+      value: -9.929
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.43199998
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.2800002
+      value: -1.684
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -5792,12 +5978,12 @@ PrefabInstance:
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.3899999
+      value: -1.1339998
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.5
+      value: -0.6739993
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -6099,9 +6285,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.objectsToEnable.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 851176778}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
@@ -6111,7 +6307,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.data[0]
       value: 
-      objectReference: {fileID: 427708424}
+      objectReference: {fileID: 851176778}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
@@ -6263,6 +6459,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &851176778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 851176774}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &851399130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6282,6 +6484,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.objectsToEnable.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -6292,6 +6499,11 @@ PrefabInstance:
       objectReference: {fileID: 253013926}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 851399133}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -6299,7 +6511,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
       value: 
-      objectReference: {fileID: 1504603519}
+      objectReference: {fileID: 851399133}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_Name
@@ -6440,6 +6652,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &851399133 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 851399130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &865642407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7407,12 +7625,12 @@ PrefabInstance:
     - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: visibilityRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: interactiveRadius
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -7770,9 +7988,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.objectsToEnable.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1148559625}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
@@ -7782,7 +8010,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
       value: 
-      objectReference: {fileID: 612268636}
+      objectReference: {fileID: 1148559625}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_Name
@@ -7923,6 +8151,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1148559625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 1148559622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1179529195
 GameObject:
   m_ObjectHideFlags: 0
@@ -9218,19 +9452,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToEnable.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
       value: 
       objectReference: {fileID: 1995477727}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1371234952}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
       value: 
-      objectReference: {fileID: 806503349}
+      objectReference: {fileID: 1371234952}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_Name
@@ -9311,12 +9560,12 @@ PrefabInstance:
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.27999973
+      value: -8.396
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.23999977
+      value: 12.375
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -11235,6 +11484,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToEnable.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
       value: 
       objectReference: {fileID: 851399132}
@@ -11245,6 +11504,11 @@ PrefabInstance:
       objectReference: {fileID: 620643370}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1504603519}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -11252,7 +11516,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
       value: 
-      objectReference: {fileID: 1689714200}
+      objectReference: {fileID: 1504603519}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_Name
@@ -11326,12 +11590,32 @@ PrefabInstance:
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.223
+      value: -20.459
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.43199998
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.048
+      value: 0.83599997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -12813,9 +13097,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToEnable.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
       value: 
       objectReference: {fileID: 1504603520}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1689714200}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToDisable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1689714200}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_Name
@@ -12889,12 +13198,12 @@ PrefabInstance:
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.10000038
+      value: 10.397
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.13999987
+      value: -3.428
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -13370,9 +13679,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToEnable.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
       value: 
       objectReference: {fileID: 427708425}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1753920994}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
@@ -13381,6 +13705,11 @@ PrefabInstance:
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1753920994}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToDisable.Array.data[2]
       value: 
       objectReference: {fileID: 620643368}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
@@ -13456,12 +13785,27 @@ PrefabInstance:
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.784
+      value: 1.4900002
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.35
+      value: -11.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -13713,6 +14057,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.objectsToEnable.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -13723,6 +14072,16 @@ PrefabInstance:
       objectReference: {fileID: 253013926}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[0]
+      value: 
+      objectReference: {fileID: 1764417513}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1764417512}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -13730,7 +14089,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
       value: 
-      objectReference: {fileID: 718345357}
+      objectReference: {fileID: 1764417513}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_Name
@@ -13848,12 +14207,12 @@ PrefabInstance:
     - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: visibilityRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: interactiveRadius
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
@@ -13875,6 +14234,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd0e1d75fd59bf4a8853f293012a53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1764417512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 1764417509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1764417513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
+    type: 3}
+  m_PrefabInstance: {fileID: 1764417509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1781280680
 GameObject:
   m_ObjectHideFlags: 0
@@ -15413,7 +15784,17 @@ PrefabInstance:
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onCompleteEvents.objectsToEnable.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -15427,6 +15808,11 @@ PrefabInstance:
       objectReference: {fileID: 1689714201}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1995477726}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -15434,7 +15820,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.data[1]
       value: 
-      objectReference: {fileID: 1371234952}
+      objectReference: {fileID: 1995477726}
     - target: {fileID: 4452435430552859318, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_Name
@@ -15515,12 +15901,27 @@ PrefabInstance:
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.044
+      value: 10.16
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.065
+      value: -13.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292713, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
