@@ -1,18 +1,17 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+using System.ComponentModel;
 using SpatialSys.UnitySDK;
 using UnityEngine;
-using UnityEngine.Events;
 
-namespace SpatialSys.Samples.InputOverride
+namespace SpatialSys.Samples.InputOverride.Erste_Bank.Scripts
 {
     public class ErsteBankTask : MonoBehaviour
     {
         [TextArea(1, 1)] public string title;
         [TextArea(1, 5)] public string description;
         public float timeToComplete = 0;
+        
+        [Tooltip("The minimum time the player must be standing in the quest radius before it can be completed.")]
+        public float minimumTime = 0;
         
         public bool startOnLoad = false;
         public bool completed = false;
@@ -26,7 +25,7 @@ namespace SpatialSys.Samples.InputOverride
         [Header("On Complete")]
         public ErsteBankTaskEvents onCompleteEvents;
         
-        private GameManagerScript gameManager;
+        public GameManagerScript gameManager;
         
         private void Start()
         {
@@ -42,6 +41,14 @@ namespace SpatialSys.Samples.InputOverride
             gameManager.loadingBarManager.StartLoadingBar(this);
             
             onStartEvents.Invoke();
+            
+            onStartEvents.objectsToEnable.ForEach(obj =>
+            {
+                var interactable = obj.GetComponent<SpatialInteractable>();
+                if (interactable == null) return;
+                
+                obj.SetActive(false);
+            });
         }
         
         public void FailTask()
@@ -66,6 +73,18 @@ namespace SpatialSys.Samples.InputOverride
             completed = false;
             
             if(startOnLoad) StartTask();
+        }
+        
+        public void MinimumTimeController()
+        {
+            onStartEvents.objectsToEnable.ForEach(obj =>
+            {
+                var interactable = obj.GetComponent<SpatialInteractable>();
+                if (interactable == null) return;
+                
+                obj.SetActive(true);
+            });
+            gameManager.loadingBarManager.RemoveWaitingBar();
         }
     }
 }

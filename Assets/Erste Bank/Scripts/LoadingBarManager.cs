@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using SpatialSys.Samples.InputOverride.Erste_Bank.Scripts;
 using UnityEngine;
 
 namespace SpatialSys.Samples.InputOverride
@@ -9,9 +10,13 @@ namespace SpatialSys.Samples.InputOverride
     {
         private Dictionary<ErsteBankTask, GameObject> loadingBars = new();
         public GameObject loadingBarPrefab;
-
+        public GameObject waitingBarPrefab;
+        
         public GameObject canvas;
+        public GameObject canvas2;
         public float yOffset = 50;
+
+        private GameObject waitingBar;
         
         public void AddLoadingBar(ErsteBankTask task)
         {
@@ -47,6 +52,26 @@ namespace SpatialSys.Samples.InputOverride
         {
             loadingBars.Remove(task, out var bar);
             Destroy(bar);
+        }
+        
+        public void AddWaitingBar(float time)
+        {
+            waitingBar = Instantiate(waitingBarPrefab, canvas2.transform);
+            waitingBar.SetActive(false);
+            
+            var waitingBarScript = waitingBar.GetComponentInChildren<loadingbar>();
+            waitingBarScript.textComp.text = "Please read the task instructions...";
+            waitingBarScript.maxTime = time;
+            
+            waitingBar.SetActive(true);
+        }
+        
+        public void RemoveWaitingBar()
+        {
+            if (waitingBar == null) return;
+            
+            waitingBar.SetActive(false);
+            Destroy(waitingBar);
         }
     }
 }
