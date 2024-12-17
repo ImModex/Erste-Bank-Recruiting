@@ -62,6 +62,7 @@ MonoBehaviour:
         m_Calls: []
     objectsToEnable:
     - {fileID: 4452435431078292715}
+    - {fileID: 4452435430679478198}
     objectsToDisable: []
     tasksToStart: []
     endAllTasks: 0
@@ -79,10 +80,10 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
-    objectsToEnable:
-    - {fileID: 4452435430679478198}
+    objectsToEnable: []
     objectsToDisable:
     - {fileID: 4452435431078292715}
+    - {fileID: 4452435430679478198}
     tasksToStart: []
     endAllTasks: 0
     resetTask: 0
