@@ -3901,14 +3901,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518978959}
-  m_LocalRotation: {x: 0.13052596, y: -0, z: -0, w: 0.9914449}
-  m_LocalPosition: {x: -4.4360156, y: 4.1062565, z: -12.5316925}
+  m_LocalRotation: {x: 0.23492043, y: -0, z: -0, w: 0.9720146}
+  m_LocalPosition: {x: -4.4360156, y: 6.1900005, z: -4.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 80323425}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 27.174, y: 0, z: 0}
 --- !u!1001 &526520960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11703,6 +11703,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.objectsToEnable.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -11711,6 +11716,11 @@ PrefabInstance:
       propertyPath: onCompleteEvents.tasksToStart.Array.data[0]
       value: 
       objectReference: {fileID: 620950354}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onStartEvents.objectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1571541079}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: onCompleteEvents.objectsToDisable.Array.size
@@ -11794,7 +11804,7 @@ PrefabInstance:
     - target: {fileID: 4452435430679478198, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430679478199, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -11860,7 +11870,7 @@ PrefabInstance:
     - target: {fileID: 4452435431078292715, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c99775e116cbc44f93fdd4733f08154, type: 3}
