@@ -8809,6 +8809,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1337330031}
   - component: {fileID: 1337330032}
+  - component: {fileID: 1337330034}
+  - component: {fileID: 1337330033}
   m_Layer: 0
   m_Name: Meetingroom
   m_TagString: Untagged
@@ -8853,8 +8855,34 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.867856, y: 2.9685059, z: 5.0432606}
-  m_Center: {x: -5.3767953, y: 11.229101, z: -11.713349}
+  m_Size: {x: 2.4528236, y: 1.0533905, z: 3.9960861}
+  m_Center: {x: -5.0799656, y: 11.335407, z: -11.829}
+--- !u!65 &1337330033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337330030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99197245, y: 1.1778793, z: 2.5847054}
+  m_Center: {x: -3.335707, y: 11.242287, z: -11.788088}
+--- !u!65 &1337330034
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337330030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0101237, y: 1.1448097, z: 2.5415497}
+  m_Center: {x: -6.802807, y: 11.312847, z: -11.751444}
 --- !u!1 &1342108088
 GameObject:
   m_ObjectHideFlags: 0
