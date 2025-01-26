@@ -25936,13 +25936,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1937856729}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: startOnLoad
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: timeToComplete
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onFailedEvents.resetTask
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: onFailedEvents.endAllTasks
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: onCompleteEvents.tasksToStart.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}

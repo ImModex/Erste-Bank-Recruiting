@@ -22,6 +22,11 @@ namespace SpatialSys.Samples.InputOverride.Erste_Bank.Scripts
             coll.radius = poi.textDisplayRadius;
             coll.isTrigger = true;
         }
+
+        public void ResetWait()
+        {
+            coll.enabled = true;
+        }
         
         private void OnTriggerEnter(Collider other)
         {
@@ -44,7 +49,7 @@ namespace SpatialSys.Samples.InputOverride.Erste_Bank.Scripts
             if (waitedLongEnough)
             {
                 task.MinimumTimeController();
-                Destroy(coll);
+                coll.enabled = false;
             }
             else StopCoroutine(waitingTask);
             

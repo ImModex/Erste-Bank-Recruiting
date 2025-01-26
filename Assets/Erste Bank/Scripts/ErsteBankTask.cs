@@ -6,6 +6,9 @@ namespace SpatialSys.Samples.InputOverride.Erste_Bank.Scripts
 {
     public class ErsteBankTask : MonoBehaviour
     {
+        [HideInInspector]
+        public GameManagerScript gameManager;
+
         [TextArea(1, 1)] public string title;
         [TextArea(1, 5)] public string description;
         public float timeToComplete = 0;
@@ -25,13 +28,13 @@ namespace SpatialSys.Samples.InputOverride.Erste_Bank.Scripts
         [Header("On Complete")]
         public ErsteBankTaskEvents onCompleteEvents;
         
-        public GameManagerScript gameManager;
-        
         private void Start()
         {
             gameManager = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
             gameManager.tasks.Add(this);
             
+            //onFailedEvents.resetTask = true;
+            //onFailedEvents.resetTask = true;
             if(startOnLoad) StartTask();
         }
 
@@ -71,7 +74,8 @@ namespace SpatialSys.Samples.InputOverride.Erste_Bank.Scripts
         {
             gameManager.loadingBarManager.RemoveLoadingBar(this);
             completed = false;
-            
+            var poi = gameObject.GetComponentInChildren<ErstePOIExtender>(true);
+            if(poi != null){ poi.ResetWait();} else {Debug.Log("Component not found");}
             if(startOnLoad) StartTask();
         }
         
