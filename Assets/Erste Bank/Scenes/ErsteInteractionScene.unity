@@ -3223,7 +3223,7 @@ MonoBehaviour:
     respawnLevelY: -100
     defaultMovementMaterial: {fileID: 0}
     disableFirstTutorial: 0
-    initialXRCameraMode: 0
+    initialXRCameraMode: 1
     allowPlayerToSwitchXRCameraMode: 1
     virtualizeMouseClickInXR: 1
     avatarControlSettings: 1
