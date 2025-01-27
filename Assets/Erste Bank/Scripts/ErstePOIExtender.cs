@@ -25,7 +25,7 @@ namespace SpatialSys.Samples.InputOverride.Erste_Bank.Scripts
 
         public void ResetWait()
         {
-            coll.enabled = true;
+            //Start();
         }
         
         private void OnTriggerEnter(Collider other)
@@ -49,7 +49,8 @@ namespace SpatialSys.Samples.InputOverride.Erste_Bank.Scripts
             if (waitedLongEnough)
             {
                 task.MinimumTimeController();
-                coll.enabled = false;
+                
+                Destroy(coll);
             }
             else StopCoroutine(waitingTask);
             

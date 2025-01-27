@@ -26010,6 +26010,11 @@ PrefabInstance:
       objectReference: {fileID: 1937856729}
     - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
+      propertyPath: minimumTime
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430552859316, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
       propertyPath: startOnLoad
       value: 1
       objectReference: {fileID: 0}
@@ -26098,10 +26103,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478196, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: description
+      value: "Endg\xFCltige Bedingungen\r\n\r\nEUR 1,000,000,000 2,875% Hypothekenpfandbriefe
+        f\xE4llig am 9. J\xE4nner 2031 (die \u201Cgedeckte Schuldverschreibungen\u201D)\r\n\r\nbegeben
+        aufgrund des\r\n\r\n\r\nCovered Bonds Programme\r\n\r\nder\r\n\r\nErste Group
+        Bank AG\r\n\r\nAusgabepreis: 99,395%\r\nSerien-Nr.: 19\r\nTranche-Nr.: 1\r\n\r\n\r\nW\xC4HRUNG,
+        ST\xDCCKELUNG, FORM\r\n\r\nW\xE4hrung und St\xFCckelung\r\nFestgelegte W\xE4hrung\t\t\t\t\t\t\tEuro
+        (\"EUR\")\r\nGesamtnennbetrag\t\t\t\t\t\t\tEUR 1.000.000.000\r\nGesamtnennbetrag
+        in Worten\t\t\t\t\t\tEuro eine Milliarde\r\nFestgelegte St\xFCclelung\t\t\t\t\t\tEUR
+        100.000\r\n\r\nZINSEN\r\n\r\n\u2612 Gedeckte Schuldverschreibungen mit einem
+        festen Zinssatz\r\n\r\nVerzinsungsbeginn\t\t\t\t\t\t\t9. J\xE4nner 2024\r\nZinssatz\t\t\t\t\t\t\t\t2,875
+        % per annum\r\n\r\n\r\nRegul\xE4re Zinszahlungen\t\t\t\t\t\tJ\xE4hrlich\r\nZinszahlungstage
+        \t\t\t\t\t\t\t9. J\xE4nner in jedem Jahr\r\nErster Zinszahlungstag\t\t\t\t\t\t9.
+        J\xE4nner 2025\r\nLetzter Zinszahlungstag\t\t\t\t\t\t9 J\xE4nner 2031\r\n\r\nB\xD6RSENOTIERUNG;
+        ZULASSUNG ZUM HANDEL UND HANDELSMODALIT\xC4TEN\r\nB\xF6rsezulassung\t\t\t\t\t\t\tWien
+        \u2013 Amtlicher Handel\r\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 4452435430679478199, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.11
+      value: -2.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452435430679478199, guid: 0c99775e116cbc44f93fdd4733f08154,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.91
       objectReference: {fileID: 0}
     - target: {fileID: 4452435431078292712, guid: 0c99775e116cbc44f93fdd4733f08154,
         type: 3}
@@ -39415,7 +39443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947487811}
   m_LocalRotation: {x: -0, y: 0.7407425, z: -0, w: 0.67178905}
-  m_LocalPosition: {x: -15.09, y: 1.354, z: 21.22}
+  m_LocalPosition: {x: -14.84, y: 1.354, z: 20.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
