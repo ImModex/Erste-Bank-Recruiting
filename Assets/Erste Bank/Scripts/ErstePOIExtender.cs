@@ -22,11 +22,6 @@ namespace SpatialSys.Samples.InputOverride.Erste_Bank.Scripts
             coll.radius = poi.textDisplayRadius;
             coll.isTrigger = true;
         }
-
-        public void ResetWait()
-        {
-            //Start();
-        }
         
         private void OnTriggerEnter(Collider other)
         {

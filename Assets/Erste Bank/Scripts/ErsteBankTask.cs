@@ -33,8 +33,6 @@ namespace SpatialSys.Samples.InputOverride.Erste_Bank.Scripts
             gameManager = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
             gameManager.tasks.Add(this);
             
-            //onFailedEvents.resetTask = true;
-            //onFailedEvents.resetTask = true;
             if(startOnLoad) StartTask();
         }
 
@@ -56,7 +54,6 @@ namespace SpatialSys.Samples.InputOverride.Erste_Bank.Scripts
         
         public void FailTask()
         {
-            //gameManager.loadingBarManager.RemoveLoadingBar(this);
             gameManager.ResetTasks();
             
             onFailedEvents.Invoke();
@@ -75,8 +72,6 @@ namespace SpatialSys.Samples.InputOverride.Erste_Bank.Scripts
             gameManager.loadingBarManager.RemoveLoadingBar(this);
             gameManager.loadingBarManager.RemoveWaitingBar();
             completed = false;
-            //var poi = gameObject.GetComponentInChildren<ErstePOIExtender>(true);
-            //if(poi != null){ poi.ResetWait();} else {Debug.Log("Component not found");}
             if(startOnLoad) StartTask();
         }
         
